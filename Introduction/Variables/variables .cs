@@ -24,8 +24,33 @@
 *The expression inside the curly braces can be a variable, a property, or a method call.
 *Example
 */
-//example
-string naame="John";
-int age=30;
-float height=5.7f;
-Console.WriteLine($"Hello {name},you are {age} years old and {height} feet tall");
+// //example
+// string naame="John";
+// int age=30;
+// float height=5.7f;
+// Console.WriteLine($"Hello {name},you are {age} years old and {height} feet tall");
+
+
+/*
+*Compining string lietral ,escape sequence,verbatim string unicode escape sequence and string interpolation
+*verbatim string is a string that ignores escape sequences. It is created by prefixing the string with the @ symbol.
+*Unicode escape sequence is a sequence of characters that represents a Unicode character. It is created by prefixing the sequence with \u.
+
+*/
+
+// string projectName = "ACME";
+// string englishLocation = $@"c:\Exercise\{projectName}\data.txt";
+// Console.WriteLine($"View English output:\n\t\t{englishLocation}\n");
+
+// string russianMessage = "\u041f\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u0442\u044c \u0440\u0443\u0441\u0441\u043a\u0438\u0439 \u0432\u044b\u0432\u043e\u0434";
+// string russianLocation = $@"c:\Exercise\{projectName}\ru-RU\data.txt";
+// Console.WriteLine($"{russianMessage}:\n\t\t{russianLocation}\n");   
+
+/*
+*Convertion fahrenheit in celcius 
+*/
+//code example
+
+int fahrenheit = 94;
+decimal celcius = (fahrenheit - 32) * 5 / 9;
+Console.WriteLine($"The temperature is {celcius}°C.");s
